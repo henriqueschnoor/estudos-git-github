@@ -1,85 +1,102 @@
-## Comandos Git explicados
+# Estudos Git e GitHub
+
+Repositório criado para registrar meus estudos e evolução em Git e GitHub.
+
+## Objetivo
+
+Aprender versionamento de código, controle de alterações, trabalho com branches e integração com GitHub.
+
+## Comandos Git Explicados
 
 ### git init
-Cria um repositório Git na pasta atual.
+Cria um novo repositório Git na pasta atual.
 
 ### git status
-Mostra o estado dos arquivos: modificados, adicionados ou pendentes.
+Mostra o estado atual dos arquivos do projeto.
 
 ### git add .
-Adiciona todas as alterações para o próximo commit.
+Adiciona todas as alterações para a área de preparação (staging).
 
 ### git add nome-do-arquivo
-Adiciona apenas um arquivo específico.
+Adiciona apenas um arquivo específico para o próximo commit.
 
 ### git commit -m "mensagem"
-Salva uma versão do projeto com uma mensagem explicando a mudança.
+Cria um commit com uma descrição das alterações realizadas.
 
 ### git log
-Mostra o histórico de commits.
+Exibe o histórico de commits do projeto.
+
+### git diff
+Mostra as diferenças entre versões dos arquivos.
+
+### git clone LINK
+Cria uma cópia local de um repositório remoto.
+
+### git pull
+Baixa e integra alterações do repositório remoto.
+
+### git push
+Envia commits locais para o repositório remoto.
 
 ### git remote -v
-Mostra o repositório remoto conectado ao GitHub.
+Lista os repositórios remotos configurados.
 
 ### git remote add origin LINK
-Conecta seu projeto local ao repositório do GitHub.
+Associa o projeto local a um repositório remoto.
 
 ### git branch
-Lista as branches do projeto.
+Lista as branches existentes.
 
 ### git branch -M main
 Renomeia a branch atual para `main`.
 
-### git push -u origin main
-Envia o projeto para o GitHub pela primeira vez.
-
-### git push
-Envia novos commits para o GitHub.
-
-### git pull
-Baixa atualizações do GitHub para seu computador.
-
-### git clone LINK
-Baixa um repositório do GitHub para seu computador.
-
 ### git checkout -b nome-da-branch
-Cria e entra em uma nova branch.
+Cria e acessa uma nova branch.
 
 ### git switch -c nome-da-branch
-Também cria e entra em uma nova branch.
+Cria e acessa uma nova branch.
 
 ### git checkout main
-Volta para a branch `main`.
+Retorna para a branch `main`.
 
 ### git switch main
-Também volta para a branch `main`.
+Retorna para a branch `main`.
 
 ### git merge nome-da-branch
-Junta as alterações de uma branch na branch atual.
-
-### git diff
-Mostra exatamente o que foi alterado nos arquivos.
+Mescla uma branch na branch atual.
 
 ### git restore nome-do-arquivo
-Desfaz alterações de um arquivo antes do commit.
+Descarta alterações não commitadas de um arquivo.
 
 ### git reset
-Remove arquivos da área de preparação, mas mantém as alterações.
+Remove arquivos da área de staging.
 
 ### git reset --hard
-Desfaz alterações e volta ao último commit. Use com cuidado.
+Retorna ao último commit descartando alterações locais. Use com cuidado.
 
 ### git rm nome-do-arquivo
-Remove um arquivo do projeto e do Git.
+Remove um arquivo do Git e do sistema de arquivos.
 
 ### git mv antigo novo
-Renomeia ou move um arquivo.
+Move ou renomeia arquivos.
 
 ### git config --global user.name "Seu Nome"
-Configura seu nome no Git.
+Define o nome do usuário Git.
 
 ### git config --global user.email "seuemail@email.com"
-Configura seu e-mail no Git.
+Define o e-mail do usuário Git.
 
 ### git config --list
-Mostra as configurações atuais do Git.
+Lista todas as configurações atuais do Git.
+
+## Próximos Tópicos para Estudo
+
+- Branches
+- Merge
+- Pull Request
+- GitHub Actions
+- Git Flow
+- Tags
+- Stash
+- Rebase
+- Conflitos de Merge
